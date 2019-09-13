@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import {Poem, MessageToggle} from './Poem';
+import {FetchBtn} from './Api';
 import './App.css';
 
 function App() {
@@ -8,11 +9,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <div>
           Edit <code>src/App.js</code> and save to reload.
           <Poem/>
           <MessageToggle/>
-        </p>
+          <FetchBtn/>
+        </div>
         <a
           className="App-link"
           href="https://reactjs.org"
