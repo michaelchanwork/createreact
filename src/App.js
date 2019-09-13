@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Poem, MessageToggle} from './Poem';
 import './App.css';
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          <Poem/>
+          <MessageToggle/>
         </p>
         <a
           className="App-link"
@@ -22,5 +25,9 @@ function App() {
     </div>
   );
 }
+
+
+
+
 
 export default App;
